@@ -1,6 +1,8 @@
 # orders-fee-distribution
 Exploratory statistics and graphs on fee amount for more than 9,000 orders
 
+The analysis, done on Google Sheets, can be accessed [here](https://docs.google.com/spreadsheets/d/1dR5GL0U3g_2uSffhfSIGWqDqYnpy4r-DnCD0MrC30hQ/edit?usp=sharing).
+
 The Fee feature was adjusted for inflation and FeeInf was created. 9,393 orders included a fee.
 
 The initial frequency distribution was highly positively skewed. An outlier analysis using inter-quartile range identified 71 outliers (comprising less than 1% of orders with fees ), ranging from $591 to $5,775.
