@@ -7,9 +7,13 @@ The initial frequency distribution was highly positively skewed. An outlier anal
 
 After filtering out the outliers, the distribution became more normal, decreasing skew and kurtosis. However, the distribution contained major peaks at $80, $180, and $330, binned at steps of 10.
 
+![FeeInf distribution](https://raw.githubusercontent.com/oberljn/orders-fee-distribution/master/FeeInf%20distribution.png)
+
 It was hypothesized that the type of the order, mostly characterized by the report form, ie the variable labeled Form, would reveal more about the three peaks.
 
 The top four most frequent forms were selected, comprising 88% of the orders with fees. The FeeInf by Form values were binned and graphed in a stacked bar chart.
+
+![FeeInf by Form](https://raw.githubusercontent.com/oberljn/orders-fee-distribution/master/FeeInf%20distribution%20by%20top%20four%20most%20frequent%20Form%20types.png)
 
 The first peak is primarily comprised of NULL type forms, ie the observation had no form attribute. The second peak was of tightly distributed ELOC's. And the third peak was of URAR's. 2055 Form type was more widely spread, peaking with ELOC's and at the lower end of the URAR distribution.
 
