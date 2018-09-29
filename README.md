@@ -1,9 +1,20 @@
 # orders-fee-distribution
 Exploratory statistics and graphs on fee amount for more than 9,000 orders
 
-Fee was adjusted for inflation and FeeInf was created. 9,393 orders included a fee.
+The Fee feature was adjusted for inflation and FeeInf was created. 9,393 orders included a fee.
 
 The initial frequency distribution was highly positively skewed. An outlier analysis using inter-quartile range identified 71 outliers (comprising less than 1% of orders with fees ), ranging from $591 to $5,775.
+
+The high boundary was calculated using one-and-a-half times the inter-quartile range, as in the following, where column B contained FeeInf:
+
+```
+QUARTILE($B$2:$B,3) +
+(
+  QUARTILE($B$2:$B,3) -
+  QUARTILE($B$2:$B,1)
+) *
+1.5
+```
 
 After filtering out the outliers, the distribution became more normal, decreasing skew and kurtosis. However, the distribution contained major peaks at $80, $180, and $330, binned at steps of 10.
 
